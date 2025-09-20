@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "name": "quranney",
+  "public": true,
+  "github": {
+    "silent": true
+  },
+  "env": {
+    "GOOGLE_AI_API_KEY": "@google-ai-api-key",
+    "NEXT_PUBLIC_VERCEL_ANALYTICS": "true"
+  },
+  "build": {
+    "env": {
+      "NEXT_TELEMETRY_DISABLED": "1"
+    }
+  },
+  "functions": {
+    "src/ai/**/*.ts": {
+      "runtime": "nodejs20.x"
+    }
+  },
+  "regions": ["iad1"],
+  "cleanUrls": true,
+  "trailingSlash": false
+}
